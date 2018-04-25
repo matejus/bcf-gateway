@@ -552,6 +552,7 @@ static void _usb_talk_process_message(char *message, size_t length)
                     tokens + USB_TALK_TOKEN_PAYLOAD
             };
             _usb_talk.subscribes[i].callback(&device_address, &payload, (usb_talk_subscribe_t *) &_usb_talk.subscribes[i]);
+            break;  // or is reason to test all subscriptions?
         }
     }
 }
