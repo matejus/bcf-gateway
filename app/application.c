@@ -866,7 +866,7 @@ static void automatic_pairing_start(uint64_t *id, usb_talk_payload_t *payload, u
 
     bc_radio_automatic_pairing_start();
 
-    usb_talk_send_string("[\"/automatic-pairing\", \"stop\"]\n");
+    usb_talk_send_string("[\"/automatic-pairing\", \"start\"]\n");
 }
 
 static void automatic_pairing_stop(uint64_t *id, usb_talk_payload_t *payload, usb_talk_subscribe_t *sub)
